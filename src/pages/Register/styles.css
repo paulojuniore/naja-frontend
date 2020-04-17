@@ -1,0 +1,28 @@
+.register-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container section.form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.register-container section form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.register-container section form label.register-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 20px;
+}
