@@ -1,0 +1,14 @@
+.container-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-product {
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 220px;
+  height: 250px;
+  background: #ff1;
+}
