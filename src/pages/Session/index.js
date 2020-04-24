@@ -1,7 +1,11 @@
 import React from 'react';
 
+import Header from '../Header';
+
 export default function Session() {
   return (
-    <h1>Bem vindo, Administrador!</h1>
+    <>
+      <Header />
+    </>
   )
 }
