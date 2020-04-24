@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import api from '../../services/api'
 import './styles.css';
 
 import { Link } from 'react-router-dom';
@@ -10,14 +11,14 @@ export default function Register() {
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
 
-  function handleRegister(e) {
+ async function handleRegister(e) {
     e.preventDefault();
-    console.log({
+ 
+    const response = await api.post('/register',{
       name,
       email,
-      password,
-      passwordConfirm
-    })
+      password
+    });
   }
 
   return (

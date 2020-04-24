@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './styles.css';
+import api from '../../services/api'
 
 import { Link } from 'react-router-dom';
 
@@ -8,10 +9,16 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  function handleLogin(e) {
+  async function handleLogin(e) {
     e.preventDefault();
-    console.log(email, password);
+    const response = await api.post('/authenticate',{
+      email,
+      password
+    });
+
+    console.log(response);
   }
+  
 
   return (
     <div className='login-container'>
