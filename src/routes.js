@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Session from './pages/Session';
+import EditProduct from './pages/EditProduct';
 
 export default function Routes() {
   return (
@@ -12,6 +13,7 @@ export default function Routes() {
         <Route path='/' component={Login} exact />
         <Route path='/register' component={Register} />
         <Route path='/session' component={Session} />
+        <Route path='/edit' component={EditProduct} exact />
       </Switch>
     </BrowserRouter>
   )

@@ -4,6 +4,8 @@ import './styles.css';
 
 import ProductIcon from '../../assets/product-icon.png';
 
+import { Link } from 'react-router-dom';
+
 export default function Session() {
   return (
     <>
@@ -19,92 +21,110 @@ export default function Session() {
       <ul className="container-products">
         <li>
           <div className="box-product">
-            <div className="img">
-              <img src={ProductIcon} alt="" className="product-img"/>
-            </div>
-            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
-            <p><b>Qtd. em estoque:</b> ??</p>
-            <p><b>R$</b> ???</p>
+            <Link to='/edit'>
+              <div className="img">
+                <img src={ProductIcon} alt="" className="product-img"/>
+              </div>
+              <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+              <p><b>Qtd. em estoque:</b> ??</p>
+              <p><b>R$</b> ???</p>
+            </Link>
           </div>
         </li>
         <li>
           <div className="box-product">
-            <div className="img">
-              <img src={ProductIcon} alt="" className="product-img"/>
-            </div>
-            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
-            <p><b>Qtd. em estoque:</b> ??</p>
-            <p><b>R$</b> ???</p>
+            <Link to='/edit'>
+              <div className="img">
+                <img src={ProductIcon} alt="" className="product-img"/>
+              </div>
+              <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+              <p><b>Qtd. em estoque:</b> ??</p>
+              <p><b>R$</b> ???</p>
+            </Link>
           </div>
         </li>
         <li>
           <div className="box-product">
-            <div className="img">
-              <img src={ProductIcon} alt="" className="product-img"/>
-            </div>
-            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
-            <p><b>Qtd. em estoque:</b> ??</p>
-            <p><b>R$</b> ???</p>
+            <Link to='/edit'>
+              <div className="img">
+                <img src={ProductIcon} alt="" className="product-img"/>
+              </div>
+              <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+              <p><b>Qtd. em estoque:</b> ??</p>
+              <p><b>R$</b> ???</p>
+            </Link>
           </div>
         </li>
         <li>
           <div className="box-product">
-            <div className="img">
-              <img src={ProductIcon} alt="" className="product-img"/>
-            </div>
-            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
-            <p><b>Qtd. em estoque:</b> ??</p>
-            <p><b>R$</b> ???</p>
+            <Link to='/edit'>
+              <div className="img">
+                <img src={ProductIcon} alt="" className="product-img"/>
+              </div>
+              <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+              <p><b>Qtd. em estoque:</b> ??</p>
+              <p><b>R$</b> ???</p>
+            </Link>
           </div>
         </li>
         <li>
           <div className="box-product">
-            <div className="img">
-              <img src={ProductIcon} alt="" className="product-img"/>
-            </div>
-            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
-            <p><b>Qtd. em estoque:</b> ??</p>
-            <p><b>R$</b> ???</p>
+            <Link to='/edit'>
+              <div className="img">
+                <img src={ProductIcon} alt="" className="product-img"/>
+              </div>
+              <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+              <p><b>Qtd. em estoque:</b> ??</p>
+              <p><b>R$</b> ???</p>
+            </Link>
           </div>
         </li>
         <li>
           <div className="box-product">
-            <div className="img">
-              <img src={ProductIcon} alt="" className="product-img"/>
-            </div>
-            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
-            <p><b>Qtd. em estoque:</b> ??</p>
-            <p><b>R$</b> ???</p>
+            <Link to='/edit'>
+              <div className="img">
+                <img src={ProductIcon} alt="" className="product-img"/>
+              </div>
+              <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+              <p><b>Qtd. em estoque:</b> ??</p>
+              <p><b>R$</b> ???</p>
+            </Link>
           </div>
         </li>
         <li>
           <div className="box-product">
-            <div className="img">
-              <img src={ProductIcon} alt="" className="product-img"/>
-            </div>
-            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
-            <p><b>Qtd. em estoque:</b> ??</p>
-            <p><b>R$</b> ???</p>
+            <Link to='/edit'>
+              <div className="img">
+                <img src={ProductIcon} alt="" className="product-img"/>
+              </div>
+              <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+              <p><b>Qtd. em estoque:</b> ??</p>
+              <p><b>R$</b> ???</p>
+            </Link>
           </div>
         </li>
         <li>
           <div className="box-product">
-            <div className="img">
-              <img src={ProductIcon} alt="" className="product-img"/>
-            </div>
-            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
-            <p><b>Qtd. em estoque:</b> ??</p>
-            <p><b>R$</b> ???</p>
+            <Link to='/edit'>
+              <div className="img">
+                <img src={ProductIcon} alt="" className="product-img"/>
+              </div>
+              <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+              <p><b>Qtd. em estoque:</b> ??</p>
+              <p><b>R$</b> ???</p>
+            </Link>
           </div>
         </li>
         <li>
           <div className="box-product">
-            <div className="img">
-              <img src={ProductIcon} alt="" className="product-img"/>
-            </div>
-            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
-            <p><b>Qtd. em estoque:</b> ??</p>
-            <p><b>R$</b> ???</p>
+            <Link to='/edit'>
+              <div className="img">
+                <img src={ProductIcon} alt="" className="product-img"/>
+              </div>
+              <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+              <p><b>Qtd. em estoque:</b> ??</p>
+              <p><b>R$</b> ???</p>
+            </Link>
           </div>
         </li>
       </ul>

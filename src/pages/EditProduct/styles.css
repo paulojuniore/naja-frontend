@@ -1,0 +1,12 @@
+.increment-group {
+  display: flex;
+}
+
+.btn-increment {
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
