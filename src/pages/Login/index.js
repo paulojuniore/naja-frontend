@@ -3,20 +3,28 @@ import React, { useState } from 'react';
 import './styles.css';
 import api from '../../services/api'
 
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const history = useHistory();
+
   async function handleLogin(e) {
     e.preventDefault();
-    const response = await api.post('/authenticate',{
-      email,
-      password
-    });
 
-    console.log(response);
+    try {
+      const response = await api.post('/authenticate',{
+        email,
+        password
+      });
+
+      console.log(response);
+      history.push('/session')
+    } catch (err) {
+      alert('Falha no login, tente novamente!');
+    }
   }
   
 
@@ -39,7 +47,7 @@ export default function Login() {
           
           <button className='button' type='submit'>Entrar</button>
 
-          <Link style={{marginTop: 10}} className='link-register' to='/session'>
+          <Link style={{marginTop: 10}} className='link-register' to='/register'>
             Cadastre-se
           </Link>
         </form>

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import api from '../../services/api'
 import './styles.css';
 
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 export default function Register() {
   const [name, setName] = useState('');
@@ -11,14 +11,23 @@ export default function Register() {
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
 
+  const history = useHistory();
+
  async function handleRegister(e) {
     e.preventDefault();
  
-    const response = await api.post('/register',{
-      name,
-      email,
-      password
-    });
+    try {
+      const response = await api.post('/register',{
+        name,
+        email,
+        password
+      });
+      
+      console.log(response);
+      history.push('/')
+    } catch (err) {
+      alert('Falha no registro, tente novamente!');
+    }
   }
 
   return (
