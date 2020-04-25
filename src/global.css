@@ -50,3 +50,7 @@ form input {
 button:hover {
   filter: brightness(90%);
 }
+
+ul li {
+  list-style: none;
+}
