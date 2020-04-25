@@ -22,7 +22,9 @@ export default function Session() {
             <div className="img">
               <img src={ProductIcon} alt="" className="product-img"/>
             </div>
-            <p style={{marginTop: 20, fontWeight: "bold"}}>Nome do produto</p>
+            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+            <p><b>Qtd. em estoque:</b> ??</p>
+            <p><b>R$</b> ???</p>
           </div>
         </li>
         <li>
@@ -30,7 +32,9 @@ export default function Session() {
             <div className="img">
               <img src={ProductIcon} alt="" className="product-img"/>
             </div>
-            <p style={{marginTop: 20, fontWeight: "bold"}}>Nome do produto</p>
+            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+            <p><b>Qtd. em estoque:</b> ??</p>
+            <p><b>R$</b> ???</p>
           </div>
         </li>
         <li>
@@ -38,7 +42,9 @@ export default function Session() {
             <div className="img">
               <img src={ProductIcon} alt="" className="product-img"/>
             </div>
-            <p style={{marginTop: 20, fontWeight: "bold"}}>Nome do produto</p>
+            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+            <p><b>Qtd. em estoque:</b> ??</p>
+            <p><b>R$</b> ???</p>
           </div>
         </li>
         <li>
@@ -46,7 +52,9 @@ export default function Session() {
             <div className="img">
               <img src={ProductIcon} alt="" className="product-img"/>
             </div>
-            <p style={{marginTop: 20, fontWeight: "bold"}}>Nome do produto</p>
+            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+            <p><b>Qtd. em estoque:</b> ??</p>
+            <p><b>R$</b> ???</p>
           </div>
         </li>
         <li>
@@ -54,7 +62,9 @@ export default function Session() {
             <div className="img">
               <img src={ProductIcon} alt="" className="product-img"/>
             </div>
-            <p style={{marginTop: 20, fontWeight: "bold"}}>Nome do produto</p>
+            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+            <p><b>Qtd. em estoque:</b> ??</p>
+            <p><b>R$</b> ???</p>
           </div>
         </li>
         <li>
@@ -62,7 +72,9 @@ export default function Session() {
             <div className="img">
               <img src={ProductIcon} alt="" className="product-img"/>
             </div>
-            <p style={{marginTop: 20, fontWeight: "bold"}}>Nome do produto</p>
+            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+            <p><b>Qtd. em estoque:</b> ??</p>
+            <p><b>R$</b> ???</p>
           </div>
         </li>
         <li>
@@ -70,7 +82,9 @@ export default function Session() {
             <div className="img">
               <img src={ProductIcon} alt="" className="product-img"/>
             </div>
-            <p style={{marginTop: 20, fontWeight: "bold"}}>Nome do produto</p>
+            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+            <p><b>Qtd. em estoque:</b> ??</p>
+            <p><b>R$</b> ???</p>
           </div>
         </li>
         <li>
@@ -78,7 +92,9 @@ export default function Session() {
             <div className="img">
               <img src={ProductIcon} alt="" className="product-img"/>
             </div>
-            <p style={{marginTop: 20, fontWeight: "bold"}}>Nome do produto</p>
+            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+            <p><b>Qtd. em estoque:</b> ??</p>
+            <p><b>R$</b> ???</p>
           </div>
         </li>
         <li>
@@ -86,15 +102,9 @@ export default function Session() {
             <div className="img">
               <img src={ProductIcon} alt="" className="product-img"/>
             </div>
-            <p style={{marginTop: 20, fontWeight: "bold"}}>Nome do produto</p>
-          </div>
-        </li>
-        <li>
-          <div className="box-product">
-            <div className="img">
-              <img src={ProductIcon} alt="" className="product-img"/>
-            </div>
-            <p style={{marginTop: 20, fontWeight: "bold"}}>Nome do produto</p>
+            <p style={{marginTop: 10, fontWeight: "bold"}}>Nome do produto</p>
+            <p><b>Qtd. em estoque:</b> ??</p>
+            <p><b>R$</b> ???</p>
           </div>
         </li>
       </ul>
