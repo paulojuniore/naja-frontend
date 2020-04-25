@@ -39,7 +39,7 @@ export default function Login() {
           
           <button className='button' type='submit'>Entrar</button>
 
-          <Link style={{marginTop: 10}} className='link-register' to='/register'>
+          <Link style={{marginTop: 10}} className='link-register' to='/session'>
             Cadastre-se
           </Link>
         </form>
