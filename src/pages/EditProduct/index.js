@@ -25,21 +25,26 @@ export default function EditProduct() {
       <Header />
       <div className="container">
         <h4 style={{marginTop: 20, textAlign: "center"}}>Editar Produto</h4>
-        <form>
-          <p>Valor atual do produto: R$ ??</p>
+        <div className='edit-group'>
+          <p className='simple-text'>Valor atual do produto: R$ ??</p>
           <input 
             placeholder="Novo valor do produto em R$"/>
-          <p>Quantidade em estoque:</p>
+          <p className='simple-text'>Quantidade em estoque:</p>
           <div className="increment-group">
             <button 
               className="btn-increment"
-              onClick={handleSubtraction}>-</button>
-            <p>{count}</p>
+              onClick={handleSubtraction}
+              style={{marginTop: 10}}>-</button>
+            <p className='simple-text'>{count}</p>
             <button 
               className="btn-increment"
-              onClick={handleSum}>+</button>
+              onClick={handleSum}
+              style={{marginTop: 10}}>+</button>
           </div>
-        </form>
+          <button 
+            className="btn btn-primary" 
+            style={{ marginTop: 20 }}>Alterar dados</button>
+        </div>
       </div>
     </>
   )

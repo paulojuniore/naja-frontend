@@ -10,3 +10,18 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+input {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 50%;
+  height: 40px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.simple-text {
+  margin-top: 10px;
+}
