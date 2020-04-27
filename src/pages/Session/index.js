@@ -11,9 +11,8 @@ export default function Session() {
 
 
   useEffect(()=> {
-    api.get('/itens', ).then(response => {  
+    api.get('/itens' ).then(response => {  
       setItens(response.data);
-
     });
 
   },[]);
@@ -40,7 +39,7 @@ export default function Session() {
       </div>
       <ul className="container-products">
        {itens.map(item => (
-          <li key={item.id}>
+          <li key={item._id}>
           <div className="box-product">
             <Link to='/edit/'>
               <div className="img">

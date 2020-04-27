@@ -20,8 +20,10 @@ export default function Login() {
         password
       });
 
-      console.log(response);
       history.push('/session')
+
+      console.log(response);
+     
     } catch (err) {
       alert('Falha no login, tente novamente!');
     }
