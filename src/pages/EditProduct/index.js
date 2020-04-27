@@ -3,7 +3,7 @@ import Header from '../Header';
 
 import './styles.css';
 
-export default function EditProduct() {
+export default function EditProduct(data) {
   const [count, setCount] = useState(0);
 
   function handleSubtraction(e) {
