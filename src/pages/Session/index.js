@@ -22,6 +22,10 @@ export default function Session() {
     <>
     <Header />
     <div className="container">
+      <Link 
+        className='btn btn-primary' 
+        to='/product-register'
+        style={{ marginTop: 25 }}>Cadastrar novo produto</Link>
       <div className="input-group mb-3">
         <input 
           type="text" 
@@ -30,7 +34,9 @@ export default function Session() {
           style={{marginTop: 30, maxWidth: 1100}} />
       </div>
       <div> 
-      <Link to='/list/category'> Buscar</Link>
+        <Link 
+          className='btn btn-primary' 
+          to='/list/category'> Buscar</Link>
       </div>
       <ul className="container-products">
        {itens.map(item => (
