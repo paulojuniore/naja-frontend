@@ -16,7 +16,7 @@ const Header = () => {
           <Nav className='mr-auto'>
           </Nav>
           <Nav>
-            <Button>Logout</Button>
+            <Button href='/' >Logout</Button>
           </Nav>
         </Navbar.Collapse>
       </div>
