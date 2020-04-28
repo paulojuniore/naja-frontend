@@ -5,8 +5,6 @@ import {useHistory } from 'react-router-dom';
 import './styles.css';
 import api from '../../services/api'
 
-
-
 export default function RegisterProduct() {
 
   const [name, setName] = useState('');
@@ -14,7 +12,6 @@ export default function RegisterProduct() {
   const [amount, setAmount] = useState('');
   const [value, setValue] = useState('');
   const history = useHistory();
-
 
   async function handleProduct(e){
     e.preventDefault();
