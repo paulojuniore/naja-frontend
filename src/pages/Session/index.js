@@ -31,6 +31,10 @@ export default function Session() {
     }
   }
 
+
+  async function handleUpdate(item){
+  }
+
   return (
     <>
     <Header />
@@ -52,7 +56,7 @@ export default function Session() {
             <div className="box-product">
               <Link >
                 <div className="buttons-container">
-                  <button>
+                  <button onClick={() => handleUpdate(item)}>
                     <MdEdit />
                   </button>
                   <button onClick={()=> handleDelete(item._id)}>
