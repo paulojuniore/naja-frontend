@@ -19,6 +19,18 @@ export default function Session() {
 
   },[]);
 
+  async function handleDelete(id){
+    try{
+
+    await api.delete(`itens/${id}`)
+
+     setItens(itens.filter(item => item._id !== id));
+
+    }catch(err){
+      alert('Erro ao deletar')
+    }
+  }
+
   return (
     <>
     <Header />
@@ -38,22 +50,25 @@ export default function Session() {
        {itens.map(item => (
           <li key={item._id}>
             <div className="box-product">
-              <Link to='/edit/'>
+              <Link >
                 <div className="buttons-container">
                   <button>
                     <MdEdit />
                   </button>
-                  <button>
+                  <button onClick={()=> handleDelete(item._id)}>
                     <MdDelete />
+
                   </button>
                 </div>
                 <div className="img">
                   <img src={ProductIcon} alt="" className="product-img"/>
-                </div>
-                <p style={{marginTop: 5, fontWeight: "bold"}}>{item.name}</p>
-                <p><b>Quantidade:</b> {item.amount}</p> 
-                <p><b>Categoria</b> {item.category}</p>
+                </div >
+                <div style={{fontSize:10, marginTop: 1} }>
+                <p style={{marginTop: 2, fontWeight: "bold"}}>{item.name}</p>
+                <p> <b>Quantidade: </b> {item.amount} </p>
+                <p><b>Categoria </b> {item.category} </p>
                 <p><b>R$</b> {item.value}</p>
+                </div>
               </Link>
             </div>
           </li>

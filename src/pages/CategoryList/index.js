@@ -17,7 +17,7 @@ export default function Session() {
  
     try {
       const response = await api.get(`/itens/`);
-      setItens(response.data.filter(response => response.category === category));
+      setItens(response.data.filter(response => response.category === category.toLowerCase()));
     
       console.log(response.data);
      
